@@ -1,0 +1,42 @@
+.cursor {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: opacity 0.2s, transform 0.2s;
+  border-radius: 100px;
+  border: 1px solid rgb(255, 187, 0);
+  opacity: 1;
+  pointer-events: none;
+  transition: 0.3s all ease;
+
+  @media (max-width: 460px) {
+    display: none;
+  }
+}
+
+.cursor.white-bg {
+  animation: cursormoves 2s infinite;
+  border-color: rgb(255, 255, 255);
+}
+/*  */
+@keyframes cursormoves {
+  0%, 100% {
+    transform: translateX(0px);
+    border-color: white;
+  }
+  25% {
+    transform: translateX(20px);
+    color: blueviolet;
+  }
+  50% {
+    transform: translateX(-20px);
+    border-color: yellow;
+  }
+  75% {
+    transform: translateX(20px);
+    border-color: blueviolet;
+  }
+}
