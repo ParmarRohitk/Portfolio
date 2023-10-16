@@ -9,6 +9,7 @@
     "@vercel/analytics": "^1.0.1",
     "cursor-effects": "^1.0.12",
     "jquery": "^3.6.3",
+    "next": "^13.4.19",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",

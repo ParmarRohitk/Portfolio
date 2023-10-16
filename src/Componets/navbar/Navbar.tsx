@@ -1,8 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Navbar.css";
 import prk from '../../img/prk.png';
-import Link from 'next/link';
-
+// import Link from 'next/link';
 
 function Navbar() {
   useEffect(() => {
@@ -71,11 +70,7 @@ function Navbar() {
         <li>
           <a href="#profile">Home</a>
         </li>
-        <li>
-          <Link href="/prkdesign">
-            <a>Design's</a>
-          </Link>
-        </li>
+
         <li>
           <a href="#projects">Projects</a>
         </li>
