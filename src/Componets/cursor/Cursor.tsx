@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./cursor.css";
 import { emojiCursor } from "cursor-effects";
-new emojiCursor({ emoji: ["🔥", "👍", "👋"] });
+new emojiCursor({ emoji: ["👋", "👍", "🔥"] });
 
 function Cursor() {
   const [cursorStyles, setCursorStyles] = useState({
@@ -13,7 +13,7 @@ function Cursor() {
 
   const [isWhiteBackground, setIsWhiteBackground] = useState(false);
 
-  let timeout;
+  let timeout: string | number | NodeJS.Timeout | undefined;
 
   useEffect(() => {
     const handleMouseMove = (e) => {

@@ -28,7 +28,7 @@ a {
 .profile .profile-text h1 img {
   padding: 0px 10px;
 }
-.profile .profile-text p:first-child {
+.profile .profile-text p:first-child, ul {
   margin: 0px 0px 5px 4px;
   font-weight: 400;
   color: var(--lightest-navy);

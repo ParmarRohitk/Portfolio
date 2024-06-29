@@ -8,7 +8,7 @@ function Pageload() {
     $(window).on("load", function () {
       setTimeout(function () {
         $(".page-load").fadeOut("slow");
-      }, 500);
+      }, 1000);
     });
   }, []);
 
